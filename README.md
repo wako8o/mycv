@@ -43,4 +43,4 @@ Creo que la tecnología debe hacer la vida más fácil e interesante. Cada proye
 
 Si necesitas un desarrollador para tu próximo proyecto, estaré encantado de discutir cómo puedo ayudarte.  
 
-[📄 Descargar CV] · [📧 Contactar]
+¡Gracias por visitar mi perfil!

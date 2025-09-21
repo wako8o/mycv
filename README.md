@@ -19,7 +19,7 @@ Creo que la tecnología debe hacer la vida más fácil e interesante. Cada proye
 ## 🛠 Habilidades y Tecnologías  
 
 ### Backend  
-- **PyPrism** · **Gumpe** · **PostgreSQL**  
+- **Python** · **Django** · **PostgreSQL**  
 
 ### Desarrollo y Herramientas  
 - **Git** · **Docker**  

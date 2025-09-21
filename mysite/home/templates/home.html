@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Емил Александров - Full Stack Разработчик</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/style.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+</head>
+<body>
+    <div class="container">
+        <div class="text-content">
+            <h1>Здравейте, аз съм <span class="name">Емил Александров</span></h1>
+            <p class="subtitle">Full Stack разработчик</p>
+            <p class="description">
+                Създавам модерни уеб приложения с Django.
+                Обичам да превръщам идеи в реалност чрез код.
+            </p>
+            <div class="buttons">
+                <a href="#projects" class="btn btn-primary">Виж проектите ми</a>
+                <a href="#contact" class="btn btn-secondary">Свържи се с мен</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:email@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="image-content">
+            <img src="{% static 'home/images/profile.png' %}" alt="Емил Александров" class="profile-image" />
+        </div>
+    </div>
+</body>
+</html>

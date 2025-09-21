@@ -1,0 +1,166 @@
+
+body {
+    background-color: #0f1010;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.text-content {
+    max-width: 50%;
+    animation: slideInFromLeft 1s ease-out;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.text-content h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.text-content h1 .name {
+    font-weight: 700;
+    color: #f0ad4e; /* Orange color for the name */
+}
+
+.text-content .subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 10px 0 20px;
+}
+
+.text-content .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.buttons .btn {
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin-right: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary {
+    background-color: #f0ad4e;
+    color: #0f1010;
+}
+
+.btn-primary:hover {
+    background-color: #ec971f;
+}
+
+.btn-secondary {
+    border: 1px solid #f0ad4e;
+    color: #f0ad4e;
+}
+
+.btn-secondary:hover {
+    background-color: #f0ad4e;
+    color: #0f1010;
+}
+
+.social-links {
+    margin-top: 40px;
+}
+
+.social-links a {
+    color: #fff;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.image-content {
+    position: relative;
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.profile-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(240, 173, 78, 0.2);
+    box-shadow: 0 0 50px rgba(240, 173, 78, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+        padding: 20px;
+    }
+
+    .text-content {
+        max-width: 100%;
+        order: 2; /* Text comes after image on small screens */
+    }
+
+    .image-content {
+        order: 1;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .text-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .buttons .btn {
+        width: 80%;
+        margin-right: 0;
+    }
+}
